@@ -20,7 +20,7 @@ const Index = () => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const response = await auth.forgot(values);
+      const response = await auth.forgot_password(values);
       if (response.status === 200) {
         // localStorage.setItem("access_token", response?.data?.access_token);
         localStorage.setItem("email", values.email);

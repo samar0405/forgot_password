@@ -1,6 +1,6 @@
 import axios from "axios";
 const http = axios.create({
-  baseURL: "https://app.olimjanov.uz/v1",
+  baseURL: "https://service.olimjanov.uz/v1",
 });
 http.interceptors.request.use((config) => {
   const access_token = localStorage.getItem("access_token");

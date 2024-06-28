@@ -40,6 +40,7 @@ const Index = () => {
       if (response) {
         localStorage.setItem("access_token", response?.data?.access_token);
         toast.success("Successfully signed in!");
+        navigate("/main");
       }
     } catch (error) {
       console.log(error);

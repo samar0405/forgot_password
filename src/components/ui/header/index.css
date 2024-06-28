@@ -1,0 +1,14 @@
+.header {
+  top: 0;
+
+  position: fixed;
+  z-index: 1300;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1300;
+}

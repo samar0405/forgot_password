@@ -1,0 +1,25 @@
+.sidebar {
+  width: 280px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .menu {
+    display: block;
+  }
+}

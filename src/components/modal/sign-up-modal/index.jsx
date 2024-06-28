@@ -19,7 +19,7 @@ const SignUpModal = ({ open, toggle }) => {
     console.log(payload);
 
     try {
-      const response = await auth.sign_up(payload);
+      const response = await auth.verify(payload);
       console.log(response);
       toggle();
     } catch (error) {

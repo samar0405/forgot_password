@@ -19,11 +19,11 @@ const ForgotModal = ({ open, toggle }) => {
     console.log(payload);
 
     try {
-      const response = await auth.verify_forgot(payload);
-      if(response){
+      const response = await auth.verify_forgot_password(payload);
+      if (response) {
         localStorage.setItem("email", values.email);
       }
-      
+
       console.log(response);
       toggle();
     } catch (error) {
